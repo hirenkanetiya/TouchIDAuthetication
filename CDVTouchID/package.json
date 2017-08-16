@@ -1,0 +1,17 @@
+{
+  "name": "CDVTouchID",
+  "version": "0.0.1",
+  "description": "user can scan the finguer and autheticate it self",
+  "cordova": {
+    "id": "com.knowarth.CDVTouchID",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "KNOWARTH",
+  "license": "ISC"
+}

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.knowarth.CDVTouchID" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<name>CDVTouchID</name>
+<js-module name="CDVTouchID" src="www/CDVTouchID.js">
+<clobbers target="CDVTouchID" />
+</js-module>
+
+	<dependency id="cordova-plugin-add-swift-support" url="cordova-plugin-add-swift-support"/>
+
+<platform name="ios">
+<config-file parent="/*" target="config.xml">
+<feature name="CDVTouchID"><param name="ios-package" value="CDVTouchID" />
+</feature>
+</config-file>
+
+		<framework src="LocalAuthentication.framework" />
+    	<framework src="Security.framework" />
+		<source-file src="src/ios/CDVTouchID.swift" />
+
+</platform></plugin>
